@@ -94,7 +94,8 @@
     /* TITLE */
     .hero-title {
       position:relative; z-index:10; text-align:center;
-      margin-bottom:0.8rem;
+      margin-top:2rem;
+      margin-bottom:0.3rem;
       animation:dropIn 0.8s cubic-bezier(0.175,0.885,0.32,1.275) both;
     }
     @keyframes dropIn { from{opacity:0;transform:scale(0.7) translateY(-30px)} to{opacity:1;transform:scale(1) translateY(0)} }
@@ -124,6 +125,7 @@
       display:flex; align-items:center; justify-content:center;
       width:100%; max-width:1300px;
       padding:0 0.5rem;
+      margin-top:-1rem;
     }
 
     /* SURFBOARD — realistic */
@@ -514,18 +516,38 @@
 
 </section>
 
-<!-- BANNER (блок 2) -->
+<!-- CROWD PHOTO (блок 2) -->
+<div style="width:100%;overflow:hidden;line-height:0;background:#01579b;">
+  <img src="crowd.jpg" alt="Big Al's food truck crowd on the beach" style="width:100%;display:block;object-fit:cover;max-height:85vh;"/>
+</div>
+
+<!-- FOOD PHOTOS (блок 3) -->
+<div style="background:linear-gradient(135deg,#e0f7fa,#b3e5fc);padding:4rem 1.5rem;">
+  <div style="text-align:center;margin-bottom:2.5rem;">
+    <span style="display:inline-block;background:linear-gradient(135deg,#00acc1,#29b6f6);color:#fff;font-weight:900;font-size:0.78rem;letter-spacing:3px;text-transform:uppercase;padding:0.32rem 1.1rem;border-radius:50px;margin-bottom:0.7rem;">🍔 Fresh Made Daily</span>
+    <h2 style="font-family:'Bangers',cursive;font-size:clamp(2.5rem,6vw,4rem);letter-spacing:3px;color:#01579b;">OUR FOOD</h2>
+    <span style="display:block;width:90px;height:6px;background:linear-gradient(90deg,#e8231a,#ff6f00,#ffeb3b);border-radius:10px;margin:0.6rem auto 0;"></span>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;max-width:1050px;margin:0 auto;">
+    <div style="border-radius:22px;overflow:hidden;box-shadow:0 15px 50px rgba(1,87,155,0.25);transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.025)'" onmouseout="this.style.transform='scale(1)'">
+      <img src="burger.jpg" alt="Big Al's Smash Burger" style="width:100%;display:block;object-fit:cover;height:380px;"/>
+      <div style="background:#fff;padding:1.2rem 1.5rem;">
+        <h3 style="font-family:'Bangers',cursive;font-size:1.8rem;color:#e8231a;letter-spacing:2px;">Smash Burger 🍔</h3>
+        <p style="color:#546e7a;font-size:0.95rem;line-height:1.6;margin-top:0.3rem;">Hand-smashed fresh patty, double cheese, secret sauce, brioche bun. Tampa Bay's favorite!</p>
+      </div>
+    </div>
+    <div style="border-radius:22px;overflow:hidden;box-shadow:0 15px 50px rgba(1,87,155,0.25);transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.025)'" onmouseout="this.style.transform='scale(1)'">
+      <img src="wrap.jpg" alt="Big Al's Beef Wrap" style="width:100%;display:block;object-fit:cover;height:380px;"/>
+      <div style="background:#fff;padding:1.2rem 1.5rem;">
+        <h3 style="font-family:'Bangers',cursive;font-size:1.8rem;color:#00838f;letter-spacing:2px;">Beef Wrap 🌯</h3>
+        <p style="color:#546e7a;font-size:0.95rem;line-height:1.6;margin-top:0.3rem;">Prime beef, fresh arugula, peppers, red onion and our signature beach sauce. Pure Florida!</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- BANNER (блок 4) -->
 <div class="banner-strip" id="menu">
-  <img src="banner.png" alt="Big Al's Banner" class="banner-img reveal"/>
-</div>
-
-<!-- TRUCK3 FULL WIDTH (блок 3) -->
-<div class="truck3-block">
-  <img src="truck3.png" alt="Big Al's Food Truck"/>
-</div>
-
-<!-- ABOUT (блок 4) -->
-<section class="promise-sec" id="about">
   <div class="sec-head">
     <span class="sec-tag">🐊 The Big Al's Promise</span>
     <h2 class="sec-title" style="color:var(--ocean-d);">WHY CHOOSE US?</h2>
