@@ -185,7 +185,7 @@
     /* ─── SCENE: SURFBOARDS + GATOR ─── */
     .scene {
       position: relative; z-index: 10;
-      display: flex; align-items: flex-end; justify-content: center;
+      display: flex; align-items: center; justify-content: center;
       width: 100%; max-width: 1200px;
       padding: 0 1rem;
       margin: 1.5rem auto 0;
@@ -216,15 +216,15 @@
     .gator-center {
       flex: 1;
       display: flex; flex-direction: column;
-      align-items: center; justify-content: flex-end;
+      align-items: center; justify-content: center;
       position: relative; z-index: 6;
       min-width: 260px;
+      align-self: center;
     }
 
     .gator-img {
       width: clamp(440px, 60vw, 760px);
       filter: drop-shadow(0 20px 50px rgba(0,0,0,0.4));
-      mix-blend-mode: multiply;
       animation: gatorBob 4s ease-in-out infinite;
       position: relative; z-index: 6;
     }
@@ -278,7 +278,6 @@
       max-width: 1100px; width: 100%; display: block; margin: 0 auto;
       border-radius: 18px;
       box-shadow: 0 20px 60px rgba(1,87,155,0.4);
-      mix-blend-mode: multiply;
     }
 
     /* ══════════════════════ SECTIONS ══════════════════════ */
@@ -343,13 +342,11 @@
       border-radius: 20px; overflow: hidden;
       box-shadow: 0 15px 50px rgba(1,87,155,0.25);
       transition: transform 0.4s;
-      background: transparent;
     }
     .gal-item:hover { transform: scale(1.025); }
     .gal-item img { 
       width: 100%; display: block; 
       object-fit: cover; height: 370px;
-      mix-blend-mode: multiply;
     }
     .gal-item:last-child { grid-column: 1/-1; }
     .gal-item:last-child img { height: 300px; }
