@@ -528,21 +528,44 @@
     <h2 style="font-family:'Bangers',cursive;font-size:clamp(2.5rem,6vw,4rem);letter-spacing:3px;color:#01579b;">OUR FOOD</h2>
     <span style="display:block;width:90px;height:6px;background:linear-gradient(90deg,#e8231a,#ff6f00,#ffeb3b);border-radius:10px;margin:0.6rem auto 0;"></span>
   </div>
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;max-width:1050px;margin:0 auto;">
-    <div style="border-radius:22px;overflow:hidden;box-shadow:0 15px 50px rgba(1,87,155,0.25);transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.025)'" onmouseout="this.style.transform='scale(1)'">
-      <img src="burger.jpg" alt="Big Al's Smash Burger" style="width:100%;display:block;object-fit:cover;height:380px;"/>
-      <div style="background:#fff;padding:1.2rem 1.5rem;">
-        <h3 style="font-family:'Bangers',cursive;font-size:1.8rem;color:#e8231a;letter-spacing:2px;">Smash Burger 🍔</h3>
-        <p style="color:#546e7a;font-size:0.95rem;line-height:1.6;margin-top:0.3rem;">Hand-smashed fresh patty, double cheese, secret sauce, brioche bun. Tampa Bay's favorite!</p>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(460px,1fr));gap:1.5rem;max-width:1050px;margin:0 auto;">
+
+    <!-- Burger -->
+    <div style="border-radius:22px;overflow:hidden;box-shadow:0 15px 50px rgba(1,87,155,0.25);background:#fff;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.025)'" onmouseout="this.style.transform='scale(1)'">
+      <img src="burger.jpg" alt="Big Al's Smash Burger" style="width:100%;display:block;object-fit:cover;height:320px;"/>
+      <div style="padding:1.2rem 1.5rem;border-top:5px solid #e8231a;">
+        <h3 style="font-family:'Bangers',cursive;font-size:1.9rem;color:#e8231a;letter-spacing:2px;">Smash Burger 🍔</h3>
+        <p style="color:#546e7a;font-size:0.95rem;line-height:1.6;margin-top:0.3rem;">Hand-smashed fresh patty, double cheese, secret sauce on a brioche bun. Tampa Bay's #1 favorite!</p>
       </div>
     </div>
-    <div style="border-radius:22px;overflow:hidden;box-shadow:0 15px 50px rgba(1,87,155,0.25);transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.025)'" onmouseout="this.style.transform='scale(1)'">
-      <img src="wrap.jpg" alt="Big Al's Beef Wrap" style="width:100%;display:block;object-fit:cover;height:380px;"/>
-      <div style="background:#fff;padding:1.2rem 1.5rem;">
-        <h3 style="font-family:'Bangers',cursive;font-size:1.8rem;color:#00838f;letter-spacing:2px;">Beef Wrap 🌯</h3>
-        <p style="color:#546e7a;font-size:0.95rem;line-height:1.6;margin-top:0.3rem;">Prime beef, fresh arugula, peppers, red onion and our signature beach sauce. Pure Florida!</p>
+
+    <!-- Beef Wrap -->
+    <div style="border-radius:22px;overflow:hidden;box-shadow:0 15px 50px rgba(1,87,155,0.25);background:#fff;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.025)'" onmouseout="this.style.transform='scale(1)'">
+      <img src="wrap.jpg" alt="Big Al's Beef Wrap" style="width:100%;display:block;object-fit:cover;height:320px;"/>
+      <div style="padding:1.2rem 1.5rem;border-top:5px solid #00838f;">
+        <h3 style="font-family:'Bangers',cursive;font-size:1.9rem;color:#00838f;letter-spacing:2px;">Beef Wrap 🌯</h3>
+        <p style="color:#546e7a;font-size:0.95rem;line-height:1.6;margin-top:0.3rem;">Prime beef, fresh arugula, peppers, red onion & our signature beach sauce. Pure Florida flavor!</p>
       </div>
     </div>
+
+    <!-- Chicken Wrap -->
+    <div style="border-radius:22px;overflow:hidden;box-shadow:0 15px 50px rgba(1,87,155,0.25);background:#fff;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.025)'" onmouseout="this.style.transform='scale(1)'">
+      <img src="chicken.jpg" alt="Big Al's Swamp Chicken Wrap" style="width:100%;display:block;object-fit:cover;height:320px;"/>
+      <div style="padding:1.2rem 1.5rem;border-top:5px solid #ff6f00;">
+        <h3 style="font-family:'Bangers',cursive;font-size:1.9rem;color:#ff6f00;letter-spacing:2px;">Swamp Chicken Wrap 🌶️</h3>
+        <p style="color:#546e7a;font-size:0.95rem;line-height:1.6;margin-top:0.3rem;">Grilled chicken, fresh greens, chipotle sauce, peppers & red onion. Our spicy Florida classic!</p>
+      </div>
+    </div>
+
+    <!-- Ham & Cheese -->
+    <div style="border-radius:22px;overflow:hidden;box-shadow:0 15px 50px rgba(1,87,155,0.25);background:#fff;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.025)'" onmouseout="this.style.transform='scale(1)'">
+      <img src="ham.jpg" alt="Big Al's Ham & Cheese Wrap" style="width:100%;display:block;object-fit:cover;height:320px;"/>
+      <div style="padding:1.2rem 1.5rem;border-top:5px solid #ffd740;">
+        <h3 style="font-family:'Bangers',cursive;font-size:1.9rem;color:#f57f17;letter-spacing:2px;">Ham & Cheese Wrap 🧀</h3>
+        <p style="color:#546e7a;font-size:0.95rem;line-height:1.6;margin-top:0.3rem;">Premium ham, provolone & cheddar, honey mustard, lettuce in a sesame wrap. Classic comfort!</p>
+      </div>
+    </div>
+
   </div>
 </div>
 
