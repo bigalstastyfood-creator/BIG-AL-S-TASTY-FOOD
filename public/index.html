@@ -72,15 +72,13 @@
     /* ══════════════════════ HERO ══════════════════════ */
     .hero {
       min-height: 100vh;
-      background: linear-gradient(180deg,
-        #87ceeb 0%,
-        #4fc3f7 20%,
-        #29b6f6 50%,
-        #0288d1 75%,
-        #0277bd 100%);
+      background: 
+        linear-gradient(180deg, rgba(0,0,0,0.08) 0%, rgba(0,20,60,0.5) 100%),
+        url('truck3.png') center center / cover no-repeat;
       position: relative; overflow: hidden;
       display: flex; flex-direction: column;
-      align-items: center; padding-top: 140px;
+      align-items: center; justify-content: flex-end;
+      padding-top: 80px; padding-bottom: 0;
     }
 
     /* ─── BLAZING SUN ─── */
@@ -145,7 +143,8 @@
     /* ─── TITLE ─── */
     .hero-title-block {
       position: relative; z-index: 10;
-      text-align: center; margin-top: 1.5rem;
+      text-align: center;
+      margin-bottom: 1rem;
       animation: dropIn 0.9s cubic-bezier(0.175,0.885,0.32,1.275) both;
     }
     @keyframes dropIn {
@@ -461,11 +460,7 @@
 <!-- ══════════ HERO ══════════ -->
 <section class="hero" id="top">
 
-  <!-- Clouds -->
-  <div class="cloud cl1"><div class="cl-body"></div></div>
-  <div class="cloud cl2"><div class="cl-body"></div></div>
-
-  <!-- SUN -->
+  <!-- SUN поверх фоновой картинки -->
   <div class="sun-wrap">
     <svg class="sun-rays" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
       <g transform="translate(200,200)">
@@ -497,125 +492,6 @@
     <p class="hero-sub">🌴 Tampa Bay's Tastiest Food Truck 🌴</p>
   </div>
 
-  <!-- ── SCENE: SURFBOARD LEFT + GATOR + SURFBOARD RIGHT ── -->
-  <div class="scene">
-
-    <!-- LEFT SURFBOARD -->
-    <div class="surfboard-wrap">
-      <div class="surfboard">
-        <svg viewBox="0 0 200 560" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <linearGradient id="boardL" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%"   stop-color="#ff1744"/>
-              <stop offset="30%"  stop-color="#ff6d00"/>
-              <stop offset="60%"  stop-color="#ffd600"/>
-              <stop offset="100%" stop-color="#00e5ff"/>
-            </linearGradient>
-            <linearGradient id="boardLSide" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%"   stop-color="rgba(255,255,255,0.4)"/>
-              <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
-            </linearGradient>
-          </defs>
-          <!-- Main board shape -->
-          <path d="M100,8 C130,8 160,50 168,120 L172,380 C172,450 140,530 100,548 C60,530 28,450 28,380 L32,120 C40,50 70,8 100,8 Z"
-                fill="url(#boardL)" stroke="rgba(255,255,255,0.6)" stroke-width="2"/>
-          <!-- Shine -->
-          <path d="M100,8 C130,8 160,50 168,120 L172,380 C172,450 140,530 100,548 C60,530 28,450 28,380 L32,120 C40,50 70,8 100,8 Z"
-                fill="url(#boardLSide)" opacity="0.3"/>
-          <!-- Fin -->
-          <path d="M75,520 L65,555 L95,535 Z" fill="#e53935" opacity="0.9"/>
-          <!-- Rail stripe -->
-          <path d="M55,100 C50,180 48,320 52,420" stroke="rgba(255,255,255,0.5)" stroke-width="3" fill="none" stroke-linecap="round"/>
-          <path d="M145,100 C150,180 152,320 148,420" stroke="rgba(255,255,255,0.3)" stroke-width="2" fill="none" stroke-linecap="round"/>
-
-          <!-- MENU label -->
-          <rect x="32" y="60" width="136" height="32" rx="8" fill="rgba(0,0,0,0.35)"/>
-          <text x="100" y="82" text-anchor="middle" font-family="Bangers,cursive" font-size="22" fill="#ffeb3b" letter-spacing="2">MENU</text>
-
-          <!-- Menu items -->
-          <rect x="28" y="105" width="144" height="36" rx="6" fill="rgba(255,255,255,0.92)"/>
-          <text x="100" y="120" text-anchor="middle" font-family="Bangers,cursive" font-size="13" fill="#e53935" letter-spacing="1">SMASH BURGER</text>
-          <text x="100" y="135" text-anchor="middle" font-family="Nunito,sans-serif" font-size="9.5" fill="#01579b" font-weight="800">Hand-smashed fresh patty</text>
-
-          <rect x="28" y="148" width="144" height="36" rx="6" fill="rgba(255,255,255,0.92)"/>
-          <text x="100" y="163" text-anchor="middle" font-family="Bangers,cursive" font-size="12" fill="#e53935" letter-spacing="1">DOUBLE CHEESE</text>
-          <text x="100" y="178" text-anchor="middle" font-family="Nunito,sans-serif" font-size="9.5" fill="#01579b" font-weight="800">Two patties, double cheese</text>
-
-          <rect x="28" y="191" width="144" height="36" rx="6" fill="rgba(255,255,255,0.92)"/>
-          <text x="100" y="206" text-anchor="middle" font-family="Bangers,cursive" font-size="13" fill="#e53935" letter-spacing="1">HAM &amp; CHEESE</text>
-          <text x="100" y="221" text-anchor="middle" font-family="Nunito,sans-serif" font-size="9.5" fill="#01579b" font-weight="800">Premium ham, melted cheese</text>
-
-          <rect x="28" y="234" width="144" height="36" rx="6" fill="rgba(255,255,255,0.92)"/>
-          <text x="100" y="249" text-anchor="middle" font-family="Bangers,cursive" font-size="11" fill="#e53935" letter-spacing="1">SWAMP CHICKEN</text>
-          <text x="100" y="264" text-anchor="middle" font-family="Nunito,sans-serif" font-size="9.5" fill="#01579b" font-weight="800">Cajun grilled wrap 🌶️</text>
-
-          <!-- Decorative wave at bottom -->
-          <path d="M40,470 Q70,455 100,470 Q130,485 160,470" stroke="rgba(255,255,255,0.5)" stroke-width="2.5" fill="none"/>
-          <path d="M40,485 Q70,470 100,485 Q130,500 160,485" stroke="rgba(255,255,255,0.3)" stroke-width="2" fill="none"/>
-        </svg>
-      </div>
-    </div>
-
-    <!-- CENTER GATOR -->
-    <div class="gator-center">
-      <img src="logo.png" alt="Big Al the Gator eating a burger" class="gator-img"/>
-    </div>
-
-    <!-- RIGHT SURFBOARD -->
-    <div class="surfboard-wrap">
-      <div class="surfboard">
-        <svg viewBox="0 0 200 560" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <linearGradient id="boardR" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%"   stop-color="#00e5ff"/>
-              <stop offset="35%"  stop-color="#00c853"/>
-              <stop offset="65%"  stop-color="#ffd600"/>
-              <stop offset="100%" stop-color="#ff6d00"/>
-            </linearGradient>
-            <linearGradient id="boardRSide" x1="100%" y1="0%" x2="0%" y2="0%">
-              <stop offset="0%"   stop-color="rgba(255,255,255,0.4)"/>
-              <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
-            </linearGradient>
-          </defs>
-          <path d="M100,8 C130,8 160,50 168,120 L172,380 C172,450 140,530 100,548 C60,530 28,450 28,380 L32,120 C40,50 70,8 100,8 Z"
-                fill="url(#boardR)" stroke="rgba(255,255,255,0.6)" stroke-width="2"/>
-          <path d="M100,8 C130,8 160,50 168,120 L172,380 C172,450 140,530 100,548 C60,530 28,450 28,380 L32,120 C40,50 70,8 100,8 Z"
-                fill="url(#boardRSide)" opacity="0.25"/>
-          <path d="M125,520 L135,555 L105,535 Z" fill="#00acc1" opacity="0.9"/>
-          <path d="M55,100 C50,180 48,320 52,420" stroke="rgba(255,255,255,0.4)" stroke-width="3" fill="none" stroke-linecap="round"/>
-          <path d="M145,100 C150,180 152,320 148,420" stroke="rgba(255,255,255,0.3)" stroke-width="2" fill="none" stroke-linecap="round"/>
-
-          <!-- MENU label -->
-          <rect x="32" y="60" width="136" height="32" rx="8" fill="rgba(0,0,0,0.35)"/>
-          <text x="100" y="82" text-anchor="middle" font-family="Bangers,cursive" font-size="22" fill="#ffeb3b" letter-spacing="2">MENU</text>
-
-          <!-- Menu items -->
-          <rect x="28" y="105" width="144" height="36" rx="6" fill="rgba(255,255,255,0.92)"/>
-          <text x="100" y="120" text-anchor="middle" font-family="Bangers,cursive" font-size="13" fill="#e53935" letter-spacing="1">BEEF WRAP</text>
-          <text x="100" y="135" text-anchor="middle" font-family="Nunito,sans-serif" font-size="9.5" fill="#01579b" font-weight="800">Seasoned beef, beach salsa</text>
-
-          <rect x="28" y="148" width="144" height="36" rx="6" fill="rgba(255,255,255,0.92)"/>
-          <text x="100" y="163" text-anchor="middle" font-family="Bangers,cursive" font-size="13" fill="#e53935" letter-spacing="1">FRENCH FRIES</text>
-          <text x="100" y="178" text-anchor="middle" font-family="Nunito,sans-serif" font-size="9.5" fill="#01579b" font-weight="800">Golden crispy, always fresh</text>
-
-          <rect x="28" y="191" width="144" height="50" rx="6" fill="rgba(255,235,59,0.92)"/>
-          <text x="100" y="208" text-anchor="middle" font-family="Bangers,cursive" font-size="13" fill="#e53935" letter-spacing="1">★ COMBO DEAL ★</text>
-          <text x="100" y="223" text-anchor="middle" font-family="Nunito,sans-serif" font-size="9" fill="#01579b" font-weight="800">Burger/Wrap + Fries</text>
-          <text x="100" y="235" text-anchor="middle" font-family="Nunito,sans-serif" font-size="9" fill="#01579b" font-weight="800">+ Drink = Best Value!</text>
-
-          <!-- drinks -->
-          <rect x="28" y="248" width="144" height="36" rx="6" fill="rgba(255,255,255,0.92)"/>
-          <text x="100" y="263" text-anchor="middle" font-family="Bangers,cursive" font-size="14" fill="#0288d1" letter-spacing="1">DRINKS</text>
-          <text x="100" y="278" text-anchor="middle" font-family="Nunito,sans-serif" font-size="9.5" fill="#01579b" font-weight="800">Soda, Water, Juice 🥤</text>
-
-          <path d="M40,470 Q70,455 100,470 Q130,485 160,470" stroke="rgba(255,255,255,0.5)" stroke-width="2.5" fill="none"/>
-          <path d="M40,485 Q70,470 100,485 Q130,500 160,485" stroke="rgba(255,255,255,0.3)" stroke-width="2" fill="none"/>
-        </svg>
-      </div>
-    </div>
-
-  </div><!-- /scene -->
-
   <!-- Hero buttons -->
   <div class="hero-btns">
     <a href="#about" class="btn-fire">🍔 Learn More</a>
@@ -630,24 +506,6 @@
       <path d="M0,80 C240,110 500,55 720,85 C940,115 1200,60 1440,85 L1440,120 L0,120Z" fill="#01579b"/>
     </svg>
   </div>
-
-  <!-- Palm trees -->
-  <svg class="palm palm-left" width="170" height="380" viewBox="0 0 170 380" xmlns="http://www.w3.org/2000/svg">
-    <rect x="75" y="180" width="18" height="200" rx="9" fill="#4caf50" opacity="0.7"/>
-    <ellipse cx="68" cy="168" rx="62" ry="22" fill="#388e3c" opacity="0.75" transform="rotate(-22 68 168)"/>
-    <ellipse cx="105" cy="150" rx="58" ry="20" fill="#43a047" opacity="0.75" transform="rotate(18 105 150)"/>
-    <ellipse cx="58" cy="138" rx="55" ry="18" fill="#2e7d32" opacity="0.7" transform="rotate(-40 58 138)"/>
-    <ellipse cx="118" cy="128" rx="50" ry="16" fill="#388e3c" opacity="0.7" transform="rotate(35 118 128)"/>
-    <circle cx="83" cy="182" r="14" fill="#1b5e20" opacity="0.7"/>
-  </svg>
-  <svg class="palm palm-right" width="170" height="380" viewBox="0 0 170 380" xmlns="http://www.w3.org/2000/svg">
-    <rect x="75" y="180" width="18" height="200" rx="9" fill="#4caf50" opacity="0.7"/>
-    <ellipse cx="68" cy="168" rx="62" ry="22" fill="#388e3c" opacity="0.75" transform="rotate(-22 68 168)"/>
-    <ellipse cx="105" cy="150" rx="58" ry="20" fill="#43a047" opacity="0.75" transform="rotate(18 105 150)"/>
-    <ellipse cx="58" cy="138" rx="55" ry="18" fill="#2e7d32" opacity="0.7" transform="rotate(-40 58 138)"/>
-    <ellipse cx="118" cy="128" rx="50" ry="16" fill="#388e3c" opacity="0.7" transform="rotate(35 118 128)"/>
-    <circle cx="83" cy="182" r="14" fill="#1b5e20" opacity="0.7"/>
-  </svg>
 
 </section>
 
