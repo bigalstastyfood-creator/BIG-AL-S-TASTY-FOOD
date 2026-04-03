@@ -80,12 +80,12 @@
         #0277bd 100%);
       position: relative; overflow: hidden;
       display: flex; flex-direction: column;
-      align-items: center; padding-top: 80px;
+      align-items: center; padding-top: 140px;
     }
 
     /* ─── BLAZING SUN ─── */
     .sun-wrap {
-      position: absolute; top: 55px; left: 50%;
+      position: absolute; top: 110px; left: 50%;
       transform: translateX(-50%);
       z-index: 2; pointer-events: none;
     }
@@ -125,10 +125,10 @@
       content: ''; position: absolute;
       background: rgba(255,255,255,0.82); border-radius: 50%;
     }
-    .cl1 .cl-body { width: 180px; height: 55px; top: 140px; left: 4%; animation: cloudDrift 25s linear infinite; }
+    .cl1 .cl-body { width: 180px; height: 55px; top: 200px; left: 4%; animation: cloudDrift 25s linear infinite; }
     .cl1 .cl-body::before { width: 75px; height: 75px; top: -38px; left: 18px; }
     .cl1 .cl-body::after  { width: 55px; height: 55px; top: -28px; left: 88px; }
-    .cl2 .cl-body { width: 140px; height: 42px; top: 160px; right: 6%; animation: cloudDrift 32s linear infinite reverse; }
+    .cl2 .cl-body { width: 140px; height: 42px; top: 220px; right: 6%; animation: cloudDrift 32s linear infinite reverse; }
     .cl2 .cl-body::before { width: 60px; height: 60px; top: -30px; left: 14px; }
     .cl2 .cl-body::after  { width: 45px; height: 45px; top: -22px; left: 68px; }
 
@@ -349,7 +349,7 @@
       object-fit: cover; height: 370px;
     }
     .gal-item:last-child { grid-column: 1/-1; }
-    .gal-item:last-child img { height: 300px; }
+    .gal-item:last-child img { height: 370px; }
 
     /* ══════════════════════ FIND US ══════════════════════ */
     .findus-sec {
@@ -698,10 +698,12 @@
 
   <div class="gallery-grid">
     <div class="gal-item reveal-l">
-      <img src="truck1.png" alt="Big Al's Food Truck" onerror="this.style.border='3px solid red';this.alt='truck1.png NOT FOUND'"/>
+      <img src="truck1.png" alt="Big Al's Food Truck"/>
     </div>
     <div class="gal-item reveal">
-      <img src="truck2.png" alt="Big Al's Menu Board" onerror="this.style.border='3px solid red';this.alt='truck2.png NOT FOUND'"/>
+      <img src="truck2.png" alt="Big Al's Menu Board"/>
+    </div>
+  </div>
     </div>
   </div>
 </section>
