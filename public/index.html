@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Big Al's Tasti Food – Tampa Bay's Tastiest Food Truck</title>
-  <meta name="description" content="Big Al's Tasti Food – Fresh smash burgers & beach style wraps. Tampa Bay Florida."/>
+  <title>Big Al's Tasty Food – Tampa Bay's Tastiest Food Truck</title>
+  <meta name="description" content="Big Al's Tasty Food – Fresh smash burgers & beach style wraps. Tampa Bay Florida."/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Pacifico&family=Nunito:wght@400;700;800;900&display=swap" rel="stylesheet"/>
@@ -224,6 +224,7 @@
     .gator-img {
       width: clamp(220px, 30vw, 380px);
       filter: drop-shadow(0 20px 50px rgba(0,0,0,0.4));
+      mix-blend-mode: multiply;
       animation: gatorBob 4s ease-in-out infinite;
       position: relative; z-index: 6;
     }
@@ -277,6 +278,7 @@
       max-width: 1100px; width: 100%; display: block; margin: 0 auto;
       border-radius: 18px;
       box-shadow: 0 20px 60px rgba(1,87,155,0.4);
+      mix-blend-mode: multiply;
     }
 
     /* ══════════════════════ SECTIONS ══════════════════════ */
@@ -337,13 +339,18 @@
       display: grid; grid-template-columns: 1fr 1fr;
       gap: 1.5rem; max-width: 1050px; margin: 0 auto;
     }
-    .gal-item {
+    .gal-item { 
       border-radius: 20px; overflow: hidden;
       box-shadow: 0 15px 50px rgba(1,87,155,0.25);
       transition: transform 0.4s;
+      background: transparent;
     }
     .gal-item:hover { transform: scale(1.025); }
-    .gal-item img { width: 100%; display: block; object-fit: cover; height: 370px; }
+    .gal-item img { 
+      width: 100%; display: block; 
+      object-fit: cover; height: 370px;
+      mix-blend-mode: multiply;
+    }
     .gal-item:last-child { grid-column: 1/-1; }
     .gal-item:last-child img { height: 300px; }
 
@@ -443,7 +450,7 @@
 <!-- NAV -->
 <nav>
   <a href="#" class="nav-logo">
-    <span>🐊 BIG AL'S&nbsp;</span><span>TASTI FOOD</span>
+    <span>🐊 BIG AL'S&nbsp;</span><span>TASTY FOOD</span>
   </a>
   <ul class="nav-links">
     <li><a href="#menu">Menu</a></li>
@@ -489,7 +496,7 @@
   <!-- TITLE -->
   <div class="hero-title-block">
     <span class="title-bigals">BIG AL'S</span>
-    <span class="title-tasti">TASTI FOOD</span>
+    <span class="title-tasti">TASTY FOOD</span>
     <p class="hero-sub">🌴 Tampa Bay's Tastiest Food Truck 🌴</p>
   </div>
 
@@ -694,10 +701,10 @@
 
   <div class="gallery-grid">
     <div class="gal-item reveal-l">
-      <img src="truck1.png" alt="Big Al's Food Truck"/>
+      <img src="truck1.png" alt="Big Al's Food Truck" onerror="this.style.border='3px solid red';this.alt='truck1.png NOT FOUND'"/>
     </div>
     <div class="gal-item reveal">
-      <img src="truck2.png" alt="Big Al's Menu Board"/>
+      <img src="truck2.png" alt="Big Al's Menu Board" onerror="this.style.border='3px solid red';this.alt='truck2.png NOT FOUND'"/>
     </div>
   </div>
 </section>
@@ -747,10 +754,10 @@
 <!-- FOOTER -->
 <footer>
   <div class="footer-brand">
-    🐊 <span class="r">BIG AL'S</span> <span class="w">TASTI FOOD</span>
+    🐊 <span class="r">BIG AL'S</span> <span class="w">TASTY FOOD</span>
   </div>
   <p>Fresh Smash Burgers & Beach Style Wraps · Tampa Bay, Florida</p>
-  <p style="margin-top:0.4rem;opacity:0.45;">© 2026 Big Al's Tasti Food · Made with ☀️ in Florida</p>
+  <p style="margin-top:0.4rem;opacity:0.45;">© 2026 Big Al's Tasty Food · Made with ☀️ in Florida</p>
 </footer>
 
 <script>
